@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyQRScanner</string>
+    <string name="scan_qr_code">Scan QR Code</string>
+    <string name="name">Nombre</string>
+    <string name="empty">-----</string>
+    <string name="instruccion">Scan a QR Code</string>
+    <string name="no_encontrado">No se encontró un resultado</string>
+</resources>
