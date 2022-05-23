@@ -5,4 +5,10 @@
     <string name="empty">-----</string>
     <string name="instruccion">Scan a QR Code</string>
     <string name="no_encontrado">No se encontró un resultado</string>
+
+    <string name="mensaje_de_error">Código no soportado por la aplicación</string>
+    <string name="mensaje_error_titulo">Error al Leer Código</string>
+    <string name="cerrar_dialog">Aceptar</string>
+
+    <string name="error_intent">No hay aplicación para manejar la solicitud</string>
 </resources>
