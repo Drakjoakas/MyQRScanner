@@ -2,9 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.drakjoakas.myqrscanner">
 
-    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
-    <uses-feature android:name="android.hardware.camera"></uses-feature>
-    <uses-feature android:name="android.hardware.camera.autofocus"></uses-feature>
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
 
     <application
         android:allowBackup="true"
@@ -14,33 +15,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyQRScanner">
         <activity
-            android:name=".QR"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".Splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.SENDTO"/>
-                <data android:mimeType="text/plain" />
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
+        </activity>
+        <activity
+            android:name=".QR"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
 
-            <!--<intent-filter>
-                <action android:name="android.intent.action.SEND" />
-                <data android:type="*/*" />
+            <intent-filter>
+                <action android:name="android.intent.action.SENDTO" />
+
+                <data android:mimeType="text/plain" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
 
-            <intent-filter>
-                <action android:name="android.intent.action.SENDTO"/>
-                <data android:scheme="mailto"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter> -->
+
         </activity>
     </application>
 
